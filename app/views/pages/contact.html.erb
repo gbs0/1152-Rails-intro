@@ -1,0 +1,13 @@
+<form action="/contact" method="get">
+    <label>E-mail</label>
+    <input type="text" name="email" placeholder="email@example.com">
+    <label>Feedback</label>
+    <input type="text-area" name="message" placeholder="Write your feedback">
+    <input type="submit">
+</form>
+
+<% if @email && @message %>
+  <p>Your message:</p>
+  <%= @message %>
+  <%= @email %>
+<% end %>

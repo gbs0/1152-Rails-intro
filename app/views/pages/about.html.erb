@@ -1,0 +1,12 @@
+<ul>
+    <li>Email: </li>
+    <li>Telefone: </li>
+    <li>Endereço: </li>
+</ul>
+
+<ul>
+<% @names.each do |student| %>
+  <li class="active"><%= student.capitalize %></li>  
+<% end %>
+</ul>
+
